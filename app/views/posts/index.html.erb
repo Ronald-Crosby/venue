@@ -1,0 +1,15 @@
+<h1>Hello</h1>
+
+<p>Post donk forever</p>
+
+<% @posts.each do |post| %>
+	<%= link_to post_path(post) do %>
+		<% if post.image? %>
+			<%= image_tag post.image.thumb.url %>
+		<% end %>
+	<% end %>
+<% end %>
+
+<p>
+	<%= link_to "new post", new_post_path %>
+</p>

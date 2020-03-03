@@ -1,0 +1,10 @@
+<h1>Post a new donk below</h1>
+
+<%= simple_form_for @post do |f| %>
+
+	<%= f.input :title %>
+	<%= f.input :body %>
+	<%= f.input :image %>
+
+	<%= f.button :submit %>
+<% end %>
